@@ -1,0 +1,35 @@
+# Environment variables (CRITICAL - protects API tokens)
+.env.local
+
+# Python bytecode and cache
+__pycache__/
+*.py[cod]
+*.pyc
+*.pyo
+
+# Virtual environment
+venv/
+ENV/
+
+# IDE files
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Logs
+logs/
+*.log
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Temporary files
+*.tmp
+*.temp
+
+# Project specific test files
+test_*.py
+debug_*.py
+

@@ -1,0 +1,80 @@
+[
+  {
+    "title": "Verify basic functionality works as expected",
+    "description": "Test that the core functionality operates correctly under normal conditions",
+    "steps": [
+      "1. Set up test environment with valid data",
+      "2. Execute the main functionality",
+      "3. Verify expected results are achieved",
+      "4. Document test results"
+    ],
+    "severity": "S2 - Major",
+    "priority": "P2 - High",
+    "automation": "Manual"
+  },
+  {
+    "title": "Test error handling for invalid inputs",
+    "description": "Verify system handles invalid or malformed input data gracefully",
+    "steps": [
+      "1. Prepare test data with invalid inputs",
+      "2. Execute functionality with invalid data",
+      "3. Verify appropriate error messages are displayed",
+      "4. Confirm system remains stable"
+    ],
+    "severity": "S1 - Critical",
+    "priority": "P1 - Critical",
+    "automation": "Manual"
+  },
+  {
+    "title": "Verify system behavior with edge case data",
+    "description": "Test system behavior with boundary values and edge cases",
+    "steps": [
+      "1. Identify boundary conditions for the functionality",
+      "2. Test with minimum and maximum values",
+      "3. Verify system handles edge cases correctly",
+      "4. Document any unexpected behaviors"
+    ],
+    "severity": "S3 - Moderate",
+    "priority": "P3 - Medium",
+    "automation": "Manual"
+  },
+  {
+    "title": "Test integration with external systems",
+    "description": "Verify proper integration and data flow with external systems",
+    "steps": [
+      "1. Set up integration test environment",
+      "2. Execute functionality that involves external systems",
+      "3. Verify data is transmitted correctly",
+      "4. Check for proper error handling in integration failures"
+    ],
+    "severity": "S2 - Major",
+    "priority": "P2 - High",
+    "automation": "Manual"
+  },
+  {
+    "title": "Verify performance under normal load",
+    "description": "Test system performance and response times under typical usage",
+    "steps": [
+      "1. Set up performance test environment",
+      "2. Execute functionality with normal data volume",
+      "3. Measure response times and resource usage",
+      "4. Verify performance meets requirements"
+    ],
+    "severity": "S3 - Moderate",
+    "priority": "P3 - Medium",
+    "automation": "Manual"
+  },
+  {
+    "title": "Test user interface and user experience",
+    "description": "Verify user interface elements work correctly and provide good user experience",
+    "steps": [
+      "1. Navigate to the relevant user interface",
+      "2. Interact with all UI elements",
+      "3. Verify proper feedback and navigation",
+      "4. Test accessibility and usability"
+    ],
+    "severity": "S3 - Moderate",
+    "priority": "P3 - Medium",
+    "automation": "Manual"
+  }
+]
