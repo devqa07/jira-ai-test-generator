@@ -670,15 +670,15 @@ Generate test scenarios automatically from any Jira story with our enhanced Rich
 
 ```bash
 # Basic usage with Rich UI
-./scripts/jtest MBA-5468
+./scripts/jtest ACC-900
 
 # Or using Python directly
-python scripts/jira-test.py MBA-5468
+python scripts/jira-test.py ACC-900
 
 # For stories in different projects
-./scripts/jtest PLA-6346
-./scripts/jtest MBA-5468
-./scripts/jtest PU-1234
+./scripts/jtest PA-3456
+./scripts/jtest ACC-900
+./scripts/jtest PAY-325
 ```
 
 **What it does:**
@@ -693,22 +693,22 @@ python scripts/jira-test.py MBA-5468
 
 **Example Output with Rich UI:**
 ```
-🎯 Processing MBA-5468...
+🎯 Processing ACC-900...
 ✅ Project validated
 🤖 Generating test scenarios...
 INFO | ✅ Extracted 8 scenarios from JSON-like text
 ✅ Generated 6 scenarios
 🔗 Creating and linking 6 test cases...
-✅ Created test scenario MBA-6010
-✅ Created test scenario MBA-6011
+✅ Created test scenario ACC-6010
+✅ Created test scenario ACC-6011
 ... (more scenarios)
 
 📋 AI Test Generation Summary
 ========================================
 ✅ Successfully created and linked 6 test scenarios:
-   • MBA-6010: Verify wallet balance is displayed correctly for different currencies
-   • MBA-6011: Verify transaction history updates after successful payment
-   • MBA-6012: Verify error handling for insufficient funds
+   • ACC-6010: Verify wallet balance is displayed correctly for different currencies
+   • ACC-6011: Verify transaction history updates after successful payment
+   • ACC-6012: Verify error handling for insufficient funds
    ... (more scenarios)
 ```
 
@@ -718,10 +718,10 @@ Create test scenarios from predefined templates when AI services are unavailable
 
 ```bash
 # Use manual templates
-./scripts/jtest MBA-5468 --manual
+./scripts/jtest ACC-544 --manual
 
 # Or with Python
-python scripts/jira-test.py MBA-5468 --manual
+python scripts/jira-test.py ACC-546 --manual
 ```
 
 **Template Format** (`test_scenarios.json`):
@@ -760,7 +760,7 @@ python scripts/jira-test.py MBA-5468 --manual
 #### Force Regeneration
 ```bash
 # Force regeneration (bypass cache)
-./scripts/jtest MBA-5468 --force
+./scripts/jtest ACC-901  --force
 ```
 
 #### Test JIRA Connection
@@ -772,7 +772,7 @@ python scripts/jira-test.py MBA-5468 --manual
 #### Custom Journey Type
 ```bash
 # Specify journey type
-./scripts/jtest MBA-5468 --journey Account
+./scripts/jtest ACC-5468 --journey Account
 ```
 
 ### 4. Verbose Mode (For Debugging)
@@ -781,10 +781,10 @@ Get detailed logs and processing information:
 
 ```bash
 # Enable verbose output
-./scripts/jtest MBA-5468 --verbose
+./scripts/jtest ACC-5468 --verbose
 
 # See what the AI is analyzing
-python scripts/jira-test.py MBA-5468 --verbose
+python scripts/jira-test.py ACC-5468 --verbose
 ```
 
 ## 🔄 **Intelligent Test Generation Process**
